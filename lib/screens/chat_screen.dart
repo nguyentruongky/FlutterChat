@@ -56,9 +56,9 @@ class ChatScreen extends StatelessWidget {
           msgItem,
           !isMe
               ? IconButton(
-                  icon: Icon(Icons.favorite_border),
+                  icon: message.isLiked ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
                   iconSize: 30,
-                  color: Colors.blueGrey,
+                  color: message.isLiked ? Theme.of(context).primaryColor : Colors.blueGrey,
                   onPressed: () {},
                 )
               : SizedBox.shrink()

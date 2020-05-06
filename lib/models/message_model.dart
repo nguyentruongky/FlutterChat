@@ -1,11 +1,17 @@
 import './user_mode.dart';
 
 class Message {
-  final User sender;
-  final String time;
-  final String text;
-  final bool isLiked;
-  final bool unread;
+  User sender;
+  String time;
+  String text;
+  bool isLiked;
+  bool unread;
 
-  Message({this.sender, this.time, this.text, this.isLiked, this.unread});
+  Message({User sender, String time, String text, bool isLiked = false, bool unread}) {
+    this.sender = sender;
+    this.time = time;
+    this.text = text;
+    this.unread = unread;
+    this.isLiked = isLiked;
+  }
 }
