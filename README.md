@@ -9,5 +9,7 @@ Thanks Marcus, that's really awesome work.
 - Connect to Firebase
 
 ## Known issues 
-- Back button in navigation bar doesn't work.
-- Can't set favourite icon by `isLiked` property. It leads to a weird bugs, display a solid color screen. 
+- [ ] Back button in navigation bar doesn't work.
+
+- [x] Can't set favourite icon by `isLiked` property. It leads to a weird bugs, display a solid color screen.
+> Reason: `isLiked` was missing in constructor, just provided default value for `isLiked`. 
